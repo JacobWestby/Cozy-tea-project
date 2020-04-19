@@ -1,0 +1,274 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLING STARTS */
+
+/* GENERAL */
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: seashell;
+  font-family: Helvetica;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+
+a {
+  color: seashell;
+}
+
+main {
+  margin: auto;
+  width: 1200px;
+  padding-top: 69px;
+
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 69px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+header img {
+  height: 50px;
+  padding-left: 10px;
+}
+
+/* IMAGES */
+
+.berry img,
+.spiced img,
+.donut img,
+.donut2 img,
+.bizzare img {
+  height: 200px;
+  width: 300px;
+}
+
+.location img {
+  height: 500px;
+  width: 1200px;
+}
+
+/* TOP */
+
+#overlay {
+  padding-top: 70px;
+  height: 700px;
+  width: 1200px;
+  background-image: url("../images/cozyjar.jpg");
+}
+
+#overlay .mission {
+  width: 1200px;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: auto;
+}
+
+.mission h1 {
+  padding: 12px 0px;
+  font-size: 2rem;
+}
+
+.mission h2 {
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* MIDDLE */
+
+.middle {
+  display: flex;
+  justify-content: center;
+}
+
+#feautred {
+  display: inline;
+  width: 1000px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+#feautred h1 {
+  font-size: 2rem;
+  padding-bottom: 2%;
+}
+
+#feautred p {
+  font-size: 1.2rem;
+  padding-bottom: 2%;
+}
+
+.feautred_img p {
+  padding-top: 4%;
+}
+
+.feautred_img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.donut2,
+.bizzare {
+  padding-top: 3%;
+}
+
+.donut2 {
+  position: relative;
+  left: 8%;
+}
+
+.bizzare {
+  position: relative;
+  right: 7%;
+
+}
+
+/* BOTTOM */
+
+#bottom {
+  height: 550px;
+  width: 1200px;
+  background-image: url("../images/cozy_coffe.jpg");
+  background-size: cover;
+}
+
+#locations {
+  position: relative;
+  top: 10%;
+}
+
+.adresses1,
+.adresses2,
+.adresses3 {
+  margin: 50px 20px;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+#bottom h3 {
+  font-size: 1.6rem;
+  padding-top: 0px;
+  margin-bottom: 40px;
+}
+
+#bottom p {
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+#head {
+ display: block;
+ position: relative;
+ top: 15%;
+}
+
+#bottom h1 {
+  font-size: 2rem;
+}
+
+/* FOOTER */
+
+#contact {
+  height: 200px;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+#contact h4 {
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
+  font-size: 2rem;
+}
+
+#contact a {
+  /* background-color: white; */
+  padding-bottom: 3%;
+  text-decoration: none;
+}
+
+.copy p {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  font-size: 1rem;
+}
